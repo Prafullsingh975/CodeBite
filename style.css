@@ -1,18 +1,29 @@
-*{
+@font-face {
+    font-family: "Eyesome Script";
+    src: url(fonts/Eyesome-Script.4638b439ad9e2117967846f2c.d0bf8d49cb2a8ba1941bfc18598f8d0.ttf);
+}
+
+* {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
     font-family: gilroy;
 }
-html,body{
+
+html,
+body {
     width: 100%;
     height: 100%;
 }
-#main{
+
+#main {
+    position: relative;
     width: 100%;
+    overflow-x: hidden;
     /* height: 100%; */
 }
-#main #nav{
+
+#main #nav {
     position: fixed;
     display: flex;
     align-items: center;
@@ -21,34 +32,45 @@ html,body{
     height: 10vh;
     padding: 10px 20px;
     color: #e5bc6b;
-    /* background-color: red; */
+    background-color: #000;
     z-index: 99;
 }
-#navicons{
+
+#main #nav h1 {
+    font-family: "Eyesome Script";
+    font-size: 2.5vw;
+}
+
+#navicons {
     display: flex;
     gap: 6vw;
     font-size: 3vw;
     margin-left: 3vw;
 }
-#menui i{
+
+#menui i {
     position: absolute;
 }
-#menui i:nth-child(2){
+
+#menui i:nth-child(2) {
     opacity: 0;
 }
-#buttons{
+
+#buttons {
     display: flex;
     gap: 1vw;
 }
-#buttons button{
+
+#buttons button {
     background-color: #000;
     text-transform: uppercase;
     color: #e5bc6b;
     padding: 8px 20px;
     border-radius: 5vw;
 }
-#menu{
-    /* top: -100vh; */
+
+#menu {
+    top: -100vh;
     position: absolute;
     display: flex;
     align-items: center;
@@ -59,32 +81,42 @@ html,body{
     width: 100vw;
     background-color: #181818;
 }
-#menu .slider{
+
+#menu .slider {
     position: relative;
-    width: 350px;
-    height: 200px;
+    width: 280px;
+    height: 180px;
     transform-style: preserve-3d;
-    animation: rotate 30s linear infinite;
+    animation: rotate 40s linear infinite;
 }
-@keyframes rotate{
-    0%{
-        transform : perspective(1000px) rotateY(0deg);
+
+@keyframes rotate {
+    0% {
+        transform: perspective(1000px) rotateY(0deg);
     }
-    100%{
+
+    100% {
         transform: perspective(1000px) rotateY(360deg);
     }
 }
-.slider span{
+
+#menu .slider :hover {
+    animation-play-state: paused;
+}
+
+.slider span {
     position: absolute;
+    /* position: relative; */
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     transform-origin: center;
     transform-style: preserve-3d;
-    transform: rotateY(calc(var(--i)*90deg)) translateZ(250px);
+    transform: rotateY(calc(var(--i)*90deg)) translateZ(160px);
 }
-.slider span img{
+
+.slider span img {
     position: absolute;
     top: 0;
     left: 0;
@@ -94,55 +126,105 @@ html,body{
     object-fit: cover;
     transition: 2s;
 }
-#home{ 
-    position: relative; 
+
+.slider span img:hover {
+    scale: 1.4;
+    animation-play-state: paused;
+    cursor: pointer;
+    /* animation-play-state: paused; */
+}
+
+.slider .overlay {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #000000a8;
+    /* background-color: #e5bc6b; */
+}
+
+.overlay button {
+    /* background-color: #000; */
+    text-transform: uppercase;
+    /* color: #e5bc6b; */
+    padding: 8px 20px;
+    border-radius: 5vw;
+    border: none;
+}
+
+#menu #text1 {
+    position: absolute;
+    bottom: 5%;
+    text-align: center;
+    color: #e5bc6b;
+    text-transform: uppercase;
+}
+
+#menu #text1 h1 {
+    font-size: 3vw;
+    line-height: 1;
+    /* font-family: "Eyesome Script"; */
+}
+
+#home {
+    position: relative;
     width: 100vw;
     height: 100vh;
 }
-.row{
+
+.row {
     display: flex;
     width: 100%;
     height: 33.33%;
-    background-color: black;
 }
-.showcase{
+
+.showcase {
     width: 33.33%;
     height: 100%;
     overflow: hidden;
     /* background-color: #fff; */
 }
-.showcase img{
+
+.showcase img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.showcase video{
+
+.showcase video {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-#inner{
+
+#inner {
     position: relative;
     display: flex;
     height: 100%;
 }
-#inner video{
+
+#inner video {
     width: 50%;
 }
-#home>h1{
+
+#home>h1 {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%
-    ,-50%);
+    transform: translate(-50%, -50%);
     color: #fff;
     font-size: 20vw;
     text-transform: uppercase;
-    font-family:"Aldrich Regular" ;
+    font-family: "Aldrich Regular";
     opacity: .7;
     line-height: 1;
 }
-#overlay{
+
+#overlay {
     position: absolute;
     top: 0%;
     width: 100vw;
@@ -150,29 +232,230 @@ html,body{
     background-color: #000000a2;
     color: #fff;
 }
-#overlay>img{
+
+#overlay>img {
     position: absolute;
-    top:20%;
+    top: 20%;
     left: 50%;
-    transform: translate(-50%,-20%);
+    transform: translate(-50%, -20%);
     width: 15vw;
 }
-#overlay #text{
+
+#overlay #text {
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     background-color: #fff;
 }
-#text>h1{
+
+#text>h1 {
     position: absolute;
     font-size: 4vw;
     text-transform: uppercase;
     opacity: 0;
 }
-#text h1:nth-child(2){
+
+#text h1:nth-child(2) {
     opacity: 1;
+}
+
+#hotel {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 12vh;
+    width: 90%;
+    height: 30vw;
+    /* overflow: hidden; */
+    border-radius: 3vw;
+}
+
+.header img {
+    /* display:flex ;
+    align-items: center; */
+    width: 100%;
+    height: 100%;
+    border-radius: 3vw;
+}
+
+.whcontent {
+    position: absolute;
+    bottom: -25%;
+    /* z-index: 99; */
+    width: 90%;
+    height: 25vh;
+    border-radius: 2vw;
+    background-color: #181818;
+    /* opacity: .4; */
+}
+
+.scroll {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 43%;
+    left: -9%;
+    font-size: 5vh;
+    text-transform: uppercase;
+    transform: rotate(-90deg);
+}
+
+.arrow {
+    display: flex;
+    align-items: center;
+    opacity: .5;
+}
+
+.line {
+    margin-right: 0.4vw;
+    margin-left: -1.5vw;
+    width: 4vw;
+    height: 0.2vw;
+    background-color: #000;
+
+}
+
+.arrow i {
+    font-size: 3vw;
+    font-weight: 300;
+}
+
+.scroll h3 {
+    letter-spacing: 0.5vw;
+    font-weight: 300;
+    font-size: 3vh;
+}
+
+.wcontent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 11vw;
+    width: 100%;
+}
+
+.wcontent>h1 {
+    margin-bottom: 2vh;
+}
+
+.cardcontainer {
+    position: relative;
+    width: 100%;
+    padding: 0 8vh;
+}
+
+.cardcontainer .rowHotel {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2vw;
+}
+
+.cards {
+    position: relative;
+    width: 22%;
+    height: 60vh;
+}
+
+.cards>img {
+    width: 100%;
+    box-shadow: 0 10px 8px -6px black;
+}
+
+.cardcontent {
+    padding: 9px;
+}
+
+.cardcontent h2 {
+    font-size: 1.2vw;
+}
+
+.cardcontent h5 {
+    font-size: 0.8vw;
+}
+
+.cardicon {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5vw;
+    margin-top: 2.5vh;
+    /* padding-left: 0.5vh; */
+}
+
+.cardicon .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.5vw;
+    font-size: 1.5vw;
+    /* background-color: #dadada; */
+}
+
+.cardicon img {
+    width: 100%;
+}
+
+#AC {
+    height: 18px;
+}
+
+.icons h5 {
+    margin-left: 2px;
+    font-weight: 700;
+    font-size: 0.6vw;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    margin-top: 1vw;
+}
+
+.rating i {
+    color: #e5bc6b;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1vh;
+    width: 100%;
+    /* background-color: #e5bc6b; */
+}
+
+.price button {
+    font-size: 1.8vh;
+    padding: 8px 12px;
+    /* border-radius: .5vw; */
+    background-color: #e5bc6b73;
+    border: 1px solid #e5bc6b;
+}
+
+.offer {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4vh;
+    width: 5vw;
+    border: 1px solid #e5bc6b;
+    background-color: #e5bc6b;
+}
+
+.offer h5 {
+    font-size: 1vw;
 }
