@@ -2,7 +2,10 @@
     font-family: "Eyesome Script";
     src: url(fonts/Eyesome-Script.4638b439ad9e2117967846f2c.d0bf8d49cb2a8ba1941bfc18598f8d0.ttf);
 }
-
+@font-face {
+    font-family: "gilroy";
+    src: url(./fonts/Gilroy-Regular_0.otf);
+}
 * {
     margin: 0%;
     padding: 0%;
