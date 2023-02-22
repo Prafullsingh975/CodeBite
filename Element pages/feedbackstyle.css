@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#feedback{
+    height: 100%;
+    width: 100%;
+    background-color: #201f1f;
+    color: #fff;
+    display: flex;
+    padding: 2vw 2vw;
+    font-family: gilroy;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#feedback h1{
+    text-transform: uppercase;
+}
+#feedback>form input{
+    margin-right: 2vw;
+    height: 2vw;
+    width: 12vw;
+    border-radius: 3vw;
+    padding: 0 0.2vw;
+    text-transform: uppercase;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+#feedback>form input::placeholder{
+    color: #fff;
+}
+.ques h3{
+    font-size: 1vw;
+}
+.ques>form input{
+    margin-left: 2vw;
+    margin-right: 0.2vw; 
+}
+.ques1 form input{
+    width: 60%;
+    height: 10vh;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+.ques1 form input::placeholder{
+    color: #fff;
+    text-transform: uppercase;
+    text-align: start;
+}
+#recommend h3{
+    font-size: 1.5vw;
+    text-transform: uppercase;
+}
+#recommend form{
+    font-size: 1.4vw;
+}
+#recommend form input{
+    height: 1vw;
+    width: 1vw;
+}
+#recommend form input:nth-child(2){
+    margin-left: 5vw;
+}
+button{
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    margin-left: 3vw;
+    padding: 10px 20px;
+    width: 11vw;
+    border-radius: 3vw;
+}

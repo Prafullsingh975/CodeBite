@@ -16,40 +16,109 @@
             <h1>kothik</h1>
             <div id="navicons">
                 <div id="menui">
-                    <i class="ri-menu-5-line"></i>
-                    <i class="ri-close-fill"></i>
+                    <i id="m" class="ri-menu-5-line"></i>
+                    <i id="c" class="ri-close-fill"></i>
                 </div>
                 <i class="ri-shopping-cart-2-line"></i>
             </div>
             <div id="buttons">
-                <button>log in</button>
-                <button>sign up</button>
+                <button id="log">Login</button>
+                <button id="sign">Signup</button>
             </div>
         </div>
         <div id="menu">
             <div class="slider">
-                <span style="--i:1"><img
-                        src="https://images.pexels.com/photos/1743229/pexels-photo-1743229.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="">
-                </span>
-                <span style="--i:2"><img
-                        src="https://images.pexels.com/photos/260931/pexels-photo-260931.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt=""></span>
-                <span style="--i:3"><img
-                        src="https://images.unsplash.com/photo-1504652517000-ae1068478c59?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-                        alt=""></span>
-                <span style="--i:4"><img
-                        src="https://images.pexels.com/photos/3688261/pexels-photo-3688261.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="">
-                    <div class="overlay">
-                        <h2>Hotel Booking</h2>
-                        <button>Click</button>
+                <div class="slide s1">
+                    <div class="option">
+                        <h1>ROOMS</h1>
+                        <div class="stxt">
+                            <a href="#hotel">Book Now</a>
+                        </div>
                     </div>
-                </span>
+                </div>
+                <div class="slide s2">
+                    <div class="option">
+                        <h1>DINING</h1>
+                        <div class="stxt">
+                            <a href="#tables">Book Your Table</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide s3">
+                    <div class="option">
+                        <h1>FOOD</h1>
+                        <div class="stxt">
+                            <a href="#food">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide s4">
+                    <div class="option">
+                        <h1>FEEDBACK</h1>
+                        <div class="stxt">
+                            <a href="./Element pages/feedbackindex.html">Give Your Feedback</a>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="text1">
                 <h1>Choose authentic with kothik</h1>
-                <p>Book hotels, rooms, tables and order food with Kothik.</p>
+                <p>Book rooms, tables and order food with Kothik.</p>
+            </div>
+        </div>
+        <div id="login">
+            <i class="ri-close-line"></i>
+            <div class="box">
+                <form>
+                    <h2>Log In</h2>
+                    <div class="inputbox">
+                        <input type="text" required="required">
+                        <span>Username</span>
+                        <i></i>
+                    </div>
+                    <div class="inputbox">
+                        <input type="password" required="required">
+                        <span>Password</span>
+                        <i></i>
+                    </div>
+                    <div class="links">
+                        <a href="#">Forget Password</a>
+                    </div>
+                    <input type="submit" value="Login">
+                </form>
+            </div>
+        </div>
+        <div id="signup">
+            <i class="ri-close-line"></i>
+            <div class="box">
+                <form>
+                    <h2>Sign Up</h2>
+                    <div class="inputbox">
+                        <input type="text" required="required">
+                        <span>First Name</span>
+                        <i></i>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" required="required">
+                        <span>Last Name</span>
+                        <i></i>
+                    </div>
+                    <div class="inputbox">
+                        <input type="email" required="required">
+                        <span>Email</span>
+                        <i></i>
+                    </div>
+                    <div class="inputbox">
+                        <input type="password" required="required">
+                        <span>Password</span>
+                        <i></i>
+                    </div>
+                    <div class="links">
+                        <h4>Already a member?</h4>
+                        <a href="#">Log In</a>
+                    </div>
+                    <input type="submit" value="Sign up">
+                </form>
             </div>
         </div>
         <div id="home">
@@ -92,7 +161,7 @@
         <div id="overlay">
             <img src="img/logo1p.png" alt="">
             <div id="text">
-                <h1>Book</h1>
+                <h1>Choose Authentic</h1>
                 <h1>Hotels</h1>
                 <h1>Rooms</h1>
                 <h1>Tables</h1>
@@ -100,19 +169,28 @@
             </div>
         </div>
         <div id="hotel">
-            <div class="header">
+                <div class="header">
                 <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
                     alt="">
+                    <h1>Rooms</h1>
                 <div class="whcontent">
-                    <div class="sort">
-                    <h3>Sort By</h3>
-                        <select>
-                            <option default selected>Popularity</option>
-                            <option>Guest Ratings</option>
-                            <option>Price Low to High</option>
-                            <option>Price High to Low</option>
-                        </select>
+                    <div class="details">
+                        <div class="search">
+                            <input type="text" placeholder="Search">
+                            <i class="ri-search-line"></i>
+                        </div>
+                        <div class="dates">
+                            <div class="from">
+                                <h5>From</h5>
+                                <input type="date">
+                            </div>
+                            <div class="from">
+                                <h5>To</h5>
+                                <input type="date">
+                            </div>
+                        </div>
                     </div>
+                    
                     <div class="filter">
                         <div class="clear">
                         <h3>Filter</h3>
@@ -144,22 +222,15 @@
                             </select>
                         </div>
                     </div>
-                    <div class="details">
-                        <div class="search">
-                            <input type="text" placeholder="Search">
-                            <i class="ri-search-line"></i>
+                    <div class="sort">
+                        <h3>Sort By</h3>
+                            <select>
+                                <option default selected>Popularity</option>
+                                <option>Guest Ratings</option>
+                                <option>Price Low to High</option>
+                                <option>Price High to Low</option>
+                            </select>
                         </div>
-                        <div class="dates">
-                            <div class="from">
-                                <h5>From</h5>
-                                <input type="date">
-                            </div>
-                            <div class="from">
-                                <h5>To</h5>
-                                <input type="date">
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
             <div class="scroll">
@@ -169,8 +240,8 @@
                 </div>
                 <h3>Scroll down</h3>
             </div>
-            <div class="wcontent">
-                <h1>Stay classy, feel classy</h1>
+             <div class="wcontent">
+                <h1>Stay cozy, feel classy</h1>
                 <div class="cardcontainer">
                     <div class="rowHotel">
                         <div class="cards">
@@ -290,7 +361,7 @@
                             " alt="">
                             <div class="cardcontent">
                                 <div class="name">
-                                    <h2>Courtyard By Marriott</h2>
+                                    <h2>Marriott Courtyard</h2>
                                     <div class="map">
                                     <label class="switch">
                                         <input type="checkbox">
@@ -847,20 +918,484 @@
             </div>
 
         </div>
-        <div id="food"></div>
+        <div id="food">
+            <div class="header">
+                <img src="https://images.unsplash.com/photo-1608835291093-394b0c943a75?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80" alt="">
+                <h1>Food</h1>
+                <div class="whcontent">
+                    <div class="details">
+                        <div class="search">
+                            <input type="text" placeholder="Search">
+                            <i class="ri-search-line"></i>
+                        </div>
+                        <div class="dates">
+                            <div class="from">
+                                <h5>From</h5>
+                                <input type="date">
+                            </div>
+                            <div class="from">
+                                <h5>To</h5>
+                                <input type="date">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter">
+                        <div class="clear">
+                        <h3>Filter</h3>
+                        <a href="#">Clear All</a>
+                        </div>
+                        <div class="fprice">
+                            <h3>Price</h3>
+                            <select>Select Price Range
+                                <option default selected>Select Price Range</option>
+                                <option>Rs 0 - Rs 2000</option>
+                                <option>Rs 2001 - Rs 4000</option>
+                                <option>Rs 4001 - Rs 6000</option>
+                                <option>Rs 6001 - Rs 8000</option>
+                                <option>Rs 8001 - Rs 10000</option>
+                            </select>
+                        </div>
+                        <div class="facilities">
+                            <h3>Facilities</h3>
+                            <select>
+                                <option default selected>Room Facilities</option>
+                                <option>AC</option>
+                                <option>Double Bed</option>
+                                <option>Single Bed</option>
+                                <option>Two Single Bed</option>
+                                <option>Geyser</option>
+                                <option>Mini Fridge</option>
+                                <option>TV</option>
+                                <option>Bath Tub</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="sort">
+                        <h3>Sort By</h3>
+                            <select>
+                                <option default selected>Popularity</option>
+                                <option>Guest Ratings</option>
+                                <option>Price Low to High</option>
+                                <option>Price High to Low</option>
+                            </select>
+                        </div>
+                </div>
+            </div>
+            <div class="scroll">
+                <div class="arrow">
+                    <i class="ri-arrow-left-s-line"></i>
+                    <div class="line"></div>
+                </div>
+                <h3>Scroll down</h3>
+            </div>
+            <div class="wcontent">
+                <h1>Best view with the best food</h1>
+                <div class="cardcontainer">
+                    <div class="rowHotel">
+                        <div class="cards">
+                            <img src="https://b.zmtcdn.com/data/pictures/chains/5/2600025/96478ebe2e74d30ced1f953ccc67fc06_o2_featured_v2.jpg" alt="">
+                            <div class="cardcontent">
+                                <div class="name">
+                                    <h2>Pizza Hut</h2>
+                                    <div class="map">
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                      </label>
+                                      <h5>Map view</h5>
+                                </div>
+                                </div>
+                                <h5>DB City MP Nagar,Bhopal</h5>
+                                
+                                <div class="rating">
+                                    <h5>Rating:</h5>
+                                    <i class="ri-star-s-fill"></i>
+                                    <i class="ri-star-s-fill"></i>
+                                    <i class="ri-star-s-fill"></i>
+                                    <i class="ri-star-s-fill"></i>
+                                    <i class="ri-star-half-s-fill"></i>
+                                </div>
+                                <div class="price">
+                                    <button>Menu</button>
+                                </div>
+                                <div class="offer bred">
+                                    <div class="veg rveg"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <img src="https://b.zmtcdn.com/data/pictures/chains/1/20156611/a7f97508bd43ce39fa4f0ddf06b15c49_o2_featured_v2.jpg" alt="">
+                            <div class="cardcontent">
+                                <div class="name">
+                                    <h2>Burger King</h2>
+                                    <div class="map">
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                      </label>
+                                      <h5>Map view</h5>
+                                </div>
+                                </div>
+                                <h5>Aashima Mall, Bhopal</h5>
+                                
+                                <div class="rating">
+                                    <h5>Rating:</h5>
+                                    <i class="ri-star-s-fill"></i>
+                                    <i class="ri-star-s-fill"></i>
+                                    <i class="ri-star-s-fill"></i>
+                                    <i class="ri-star-s-fill"></i>
+                                    <i class="ri-star-half-s-fill"></i>
+                                </div>
+                                <div class="price">
+                                    <button>Menu</button>
+                                </div>
+                                <div class="offer bred">
+                                    <div class="veg rveg"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <img src="https://b.zmtcdn.com/data/pictures/chains/7/19616107/5a612c3830c6261ad804660531434d14_o2_featured_v2.jpg" alt="">
+                            <div class="cardcontent">
+                                <div class="name">
+                                    <h2>Starbucks</h2>
+                                    <div class="map">
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                      </label>
+                                      <h5>Map view</h5>
+                                </div>
+                                </div>
+                                <h5>DB City MP Nagar,Bhopal</h5>
+                                
+                                <div class="rating">
+                                    <h5>Rating:</h5>
+                                    <i class="ri-star-s-fill"></i>
+                                    <i class="ri-star-s-fill"></i>
+                                    <i class="ri-star-s-fill"></i>
+                                    <i class="ri-star-s-fill"></i>
+                                    <i class="ri-star-half-s-fill"></i>
+                                </div>
+                                <div class="price">
+                                    <button>Menu</button>
+                                </div>
+                                <div class="offer bgreen">
+                                    <div class="veg gveg"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <img src="https://b.zmtcdn.com/data/pictures/chains/9/18181859/67b0460675d4d07e6180defe10ef1676_o2_featured_v2.jpg" alt="">
+                            <div class="cardcontent">
+                                <div class="name">
+                                    <h2>Second Home</h2>
+                                    <div class="map">
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                      </label>
+                                      <h5>Map view</h5>
+                                </div>
+                                </div>
+                                <h5>TT Nagar,Bhopal</h5>
+                                
+                                <div class="rating">
+                                    <h5>Rating:</h5>
+                                    <i class="ri-star-s-fill"></i>
+                                    <i class="ri-star-s-fill"></i>
+                                    <i class="ri-star-s-fill"></i>
+                                    <i class="ri-star-s-fill"></i>
+                                    <i class="ri-star-half-s-fill"></i>
+                                </div>
+                                <div class="price">
+                                    <button>Menu</button>
+                                </div>
+                                <div class="offer bgreen">
+                                    <div class="veg gveg"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rowHotel">
+                        <div class="cards">
+                            <img src="https://b.zmtcdn.com/data/pictures/chains/0/2600540/632c936531c494f745782565c3021c19_o2_featured_v2.jpg" alt="">
+                            <div class="cardcontent">
+                                <div class="name">
+                                    <h2>Noor Us Sabah</h2>
+                                    <div class="map">
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                      </label>
+                                      <h5>Map view</h5>
+                                </div>
+                                </div>
+                                <h5>Kohefiza,Bhopal</h5>
+                                
+                                <div class="rating">
+                                    <h5>Rating:</h5>
+                                    <i class="ri-star-s-fill"></i>
+                                    <i class="ri-star-s-fill"></i>
+                                    <i class="ri-star-s-fill"></i>
+                                    <i class="ri-star-s-fill"></i>
+                                    <i class="ri-star-half-s-fill"></i>
+                                </div>
+                                <div class="price">
+                                    <button>Menu</button>
+                                </div>
+                                <div class="offer bred">
+                                    <div class="veg rveg"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <img src="https://b.zmtcdn.com/data/pictures/2/2601732/73905eb9dc077a24271592c17d1041f4_o2_featured_v2.jpg" alt="">
+                            <div class="cardcontent">
+                                <div class="name">
+                                    <h2>Sharma and Vishnu</h2>
+                                    <div class="map">
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                      </label>
+                                      <h5>Map view</h5>
+                                </div>
+                                </div>
+                                <h5>Kohefiza,Bhopal</h5>
+                                
+                                <div class="rating">
+                                    <h5>Rating:</h5>
+                                    <i class="ri-star-s-fill"></i>
+                                    <i class="ri-star-s-fill"></i>
+                                    <i class="ri-star-s-fill"></i>
+                                    <i class="ri-star-s-fill"></i>
+                                    <i class="ri-star-half-s-fill"></i>
+                                </div>
+                                <div class="price">
+                                    <button>Menu</button>
+                                </div>
+                                <div class="offer bgreen">
+                                    <div class="veg gveg"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <img src="https://b.zmtcdn.com/data/pictures/5/20134125/a96e97e7c5452ef81a718680c10f3b44_o2_featured_v2.jpg" alt="">
+                            <div class="cardcontent">
+                                <div class="name">
+                                    <h2>Shahi Darbaar</h2>
+                                    <div class="map">
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                      </label>
+                                      <h5>Map view</h5>
+                                </div>
+                                </div>
+                                <h5>TT Nagar,Bhopal</h5>
+                                
+                                <div class="rating">
+                                    <h5>Rating:</h5>
+                                    <i class="ri-star-s-fill"></i>
+                                    <i class="ri-star-s-fill"></i>
+                                    <i class="ri-star-s-fill"></i>
+                                    <i class="ri-star-s-fill"></i>
+                                    <i class="ri-star-half-s-fill"></i>
+                                </div>
+                                <div class="price">
+                                    <button>Menu</button>
+                                </div>
+                                <div class="offer bgreen">
+                                    <div class="veg gveg"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <img src="https://b.zmtcdn.com/data/pictures/5/20350855/360c3148115521e6665cfd790a4fbb0b_o2_featured_v2.jpg" alt="">
+                            <div class="cardcontent">
+                                <div class="name">
+                                    <h2>24 Fly Up Cafe</h2>
+                                    <div class="map">
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                      </label>
+                                      <h5>Map view</h5>
+                                </div>
+                                </div>
+                                <h5>Jahagirabad,Bhopal</h5>
+                                
+                                <div class="rating">
+                                    <h5>Rating:</h5>
+                                    <i class="ri-star-s-fill"></i>
+                                    <i class="ri-star-s-fill"></i>
+                                    <i class="ri-star-s-fill"></i>
+                                    <i class="ri-star-s-fill"></i>
+                                    <i class="ri-star-half-s-fill"></i>
+                                </div>
+                                <div class="price">
+                                    <button>Menu</button>
+                                </div>
+                                <div class="offer bgreen">
+                                    <div class="veg gveg"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rowHotel">
+                        <div class="cards">
+                            <img src="https://b.zmtcdn.com/data/pictures/chains/1/18140551/2558b0d21583278e7ef8182ec2aae688_o2_featured_v2.jpg" alt="">
+                            <div class="cardcontent">
+                                <div class="name">
+                                    <h2>Alfry Foods</h2>
+                                    <div class="map">
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                      </label>
+                                      <h5>Map view</h5>
+                                </div>
+                                </div>
+                                <h5>MP Nagar, Bhopal</h5>
+                                
+                                <div class="rating">
+                                    <h5>Rating:</h5>
+                                    <i class="ri-star-s-fill"></i>
+                                    <i class="ri-star-s-fill"></i>
+                                    <i class="ri-star-s-fill"></i>
+                                    <i class="ri-star-s-fill"></i>
+                                    <i class="ri-star-half-s-fill"></i>
+                                </div>
+                                <div class="price">
+                                    <button>Menu</button>
+                                </div>
+                                <div class="offer bred">
+                                    <div class="veg rveg"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <img src="https://b.zmtcdn.com/data/pictures/chains/7/49427/86fb087110b418485a385f73547248fc_o2_featured_v2.jpg" alt="">
+                            <div class="cardcontent">
+                                <div class="name">
+                                    <h2>Bapu Ki Kutia</h2>
+                                    <div class="map">
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                      </label>
+                                      <h5>Map view</h5>
+                                </div>
+                                </div>
+                                <h5>Bittan Market,Bhopal</h5>
+                                
+                                <div class="rating">
+                                    <h5>Rating:</h5>
+                                    <i class="ri-star-s-fill"></i>
+                                    <i class="ri-star-s-fill"></i>
+                                    <i class="ri-star-s-fill"></i>
+                                    <i class="ri-star-s-fill"></i>
+                                    <i class="ri-star-half-s-fill"></i>
+                                </div>
+                                <div class="price">
+                                    <button>Menu</button>
+                                </div>
+                                <div class="offer bgreen">
+                                    <div class="veg gveg"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <img src="https://b.zmtcdn.com/data/pictures/chains/2/18165882/57c2daa7e415cef17d54297d315da420_o2_featured_v2.jpg" alt="">
+                            <div class="cardcontent">
+                                <div class="name">
+                                    <h2>Indian Tea House</h2>
+                                    <div class="map">
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                      </label>
+                                      <h5>Map view</h5>
+                                </div>
+                                </div>
+                                <h5>Peer Gate Area,Bhopal</h5>
+                                
+                                <div class="rating">
+                                    <h5>Rating:</h5>
+                                    <i class="ri-star-s-fill"></i>
+                                    <i class="ri-star-s-fill"></i>
+                                    <i class="ri-star-s-fill"></i>
+                                    <i class="ri-star-s-fill"></i>
+                                    <i class="ri-star-half-s-fill"></i>
+                                </div>
+                                <div class="price">
+                                    <button>Menu</button>
+                                </div>
+                                <div class="offer bgreen">
+                                    <div class="veg gveg"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <img src="https://madebydesignesia.com/themes/stradale/images/gallery/1.jpg" alt="">
+                            <div class="cardcontent">
+                                <div class="name">
+                                    <h2>Cafechinno</h2>
+                                    <div class="map">
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                      </label>
+                                      <h5>Map view</h5>
+                                </div>
+                                </div>
+                                <h5>TT Nagar,Bhopal</h5>
+                                
+                                <div class="rating">
+                                    <h5>Rating:</h5>
+                                    <i class="ri-star-s-fill"></i>
+                                    <i class="ri-star-s-fill"></i>
+                                    <i class="ri-star-s-fill"></i>
+                                    <i class="ri-star-s-fill"></i>
+                                    <i class="ri-star-half-s-fill"></i>
+                                </div>
+                                <div class="price">
+                                    <button>Menu</button>
+                                </div>
+                                <div class="offer bgreen">
+                                    <div class="veg gveg"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div id="tables">
             <div class="header">
                 <img src="https://images.pexels.com/photos/1638341/pexels-photo-1638341.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                     alt="">
+                    <h1>Dining</h1>
                 <div class="whcontent">
-                    <div class="sort">
-                    <h3>Sort By</h3>
-                        <select>
-                            <option default selected>Popularity</option>
-                            <option>Guest Ratings</option>
-                            <option>Price Low to High</option>
-                            <option>Price High to Low</option>
-                        </select>
+                    <div class="details">
+                        <div class="search">
+                            <input type="text" placeholder="Search">
+                            <i class="ri-search-line"></i>
+                        </div>
+                        <div class="time">
+                            <h3>Time</h3>
+                            <div class="dates">
+                                <div class="from">
+                                    <h5>From</h5>
+                                    <input type="time">
+                                </div>
+                                <div class="from">
+                                    <h5>To</h5>
+                                    <input type="time">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="filter">
                         <div class="clear">
@@ -885,25 +1420,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="details">
-                        <div class="search">
-                            <input type="text" placeholder="Search">
-                            <i class="ri-search-line"></i>
+                    <div class="sort">
+                        <h3>Sort By</h3>
+                            <select>
+                                <option default selected>Popularity</option>
+                                <option>Guest Ratings</option>
+                                <option>Price Low to High</option>
+                                <option>Price High to Low</option>
+                            </select>
                         </div>
-                        <div class="time">
-                            <h3>Time</h3>
-                            <div class="dates">
-                                <div class="from">
-                                    <h5>From</h5>
-                                    <input type="time">
-                                </div>
-                                <div class="from">
-                                    <h5>To</h5>
-                                    <input type="time">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
             <div class="scroll">
@@ -942,7 +1468,7 @@
                                 </div>
                                 <div class="price">
                                     <h2>1199INR</h2>
-                                    <button>Reserve Now</button>
+                                    <button onclick= "window.location.href='./Element pages/TableUI.html'">Reserve Now</button>
                                 </div>
                                 <div class="offer">
                                     <h5>40% OFF</h5>
@@ -1297,13 +1823,85 @@
                         </div>
                     </div>
                 </div>
+                
             </div>
         </div>
+        <div id="testimonials">
+                <h1>TESTIMONIALS</h1>
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                       <div class="numbertext">1 / 5</div>
+                       
+                       <div class="cnt"><div class="review"><p>"You can customise a lot there are still some window and other titles that remain fixed and suited for restaurant table reservations only. Genuinely free for all of the main functions there are paid add-in's online payments etc. Great website and company behind it so no worries about ongoing support."</p></div><div class="user"><div class="pic"><img src="https://images.pexels.com/photos/5857050/pexels-photo-5857050.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt=""></div><div class="name"><h3>Rohan Sharma</h3></div></div></div>
+                       </div>
+                       <div class="mySlides fade">
+                          <div class="numbertext">2 / 5</div>
+                          
+                          <div class="cnt"><div class="review"><p>"Very useful app if you want to implement online ordering for your restaurant. Also, great customer support. No charge/orders."</p></div><div class="user"><div class="pic"><img src="https://images.pexels.com/photos/7879393/pexels-photo-7879393.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt=""></div><div class="name"><h3>Sangeeta Tiwari</h3></div></div></div>
+                       </div>
+                       <div class="mySlides fade">
+                          <div class="numbertext">3 / 5</div>
+                          
+                          <div class="cnt"><div class="review"><p>"The rooms, infra and amenities were all good as you would expect from Radisson. Food is average. The only issue i would highlight is that there is too much noise transfer from other rooms. Anyone talking in adjacent rooms could be easily heard of and that was disturbing. The staff was courteous."</p></div><div class="user"><div class="pic"><img src="https://images.pexels.com/photos/7277153/pexels-photo-7277153.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt=""></div><div class="name"><h3>Gurpreet Chabra</h3></div></div></div>
+                       </div>
+                       <div class="mySlides fade">
+                        <div class="numbertext">4 / 5</div>
+                        <div class="cnt"><div class="review"><p>"It was a amazing stay at Taj wonderful hospitality ambience is so nice can't explain in words hotel staff is excellent feels like home beautiful property spacious rooms and a sceneric view perfect hotel you can feel the difference between Taj and other hotels... five star rating from my side.. would love to visit again soon we will come"</p></div><div class="user"><div class="pic"><img src="https://images.pexels.com/photos/8092704/pexels-photo-8092704.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt=""></div><div class="name"><h3>Pooja Singh</h3></div></div></div>
+                     </div>
+                     <div class="mySlides fade">
+                        <div class="numbertext">5 / 5</div>
+                        
+                        <div class="cnt"><div class="review"><p>“It is easy to use. I like the way the data presents itself. The way you put in your tags, guest notes, and there is a way you can do a guest note printout that I find really helpful."</p></div><div class="user"><div class="pic"><img src="https://images.pexels.com/photos/10732134/pexels-photo-10732134.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt=""></div><div class="name"><h3>Chinmay Hande</h3></div></div></div>
+                     </div>
+                       <a class="prev" onclick="plusSlides(-1)">❮</a>
+                       <a class="next" onclick="plusSlides(1)">❯</a>
+                 </div>
+                 <br>
+                 <div id="divdot" style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                 </div>
+            </div>
         <div id="footer">
-                
+            <div id="footerlft">
+                <h2>Contact Us</h2>
+                <div class="contact">
+            <h5>kothik2021@gmail.com</h5>
+            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non magnam exercitationem veritatis laboriosam esse, Bhopal.</h5>
+            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit veritatis laboriosam esse, Bhopal.</h5>
+            
+            <h5>+91 62035XXX65<br>+91 9203XXX265</h5>
+            <div class="socalicons">
+                <i class="ri-instagram-line"></i>
+                <i class="ri-facebook-line"></i>
+                <i class="ri-linkedin-box-fill"></i>
+                <i class="ri-twitter-fill"></i>
+
+            </div>
+                </div>
+                <div id="logo">
+                    <h2>Kothik</h2>
+                </div>
+            </div>
+            <div id="footerright">
+                <div id="rightTop">
+                    <h2>About Us</h2>
+                    <div class="about">
+                        <h5>Kothik is a online ordering website where you can find many options for different purposes. You can find many hotels, restaurant and cafe of city Bhopal at one site which provide different  facility like food ,dinning table and rooms </h5>
+                    </div>
+                </div>
+                <div id="rbtm">
+                    <h5>2023 <i class="ri-copyright-line"></i>Hungry Programmers</h5>
+                </div>
+            </div>
         </div>
     </div>
 </body>
-<!-- <script src="script.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js" integrity="sha512-A64Nik4Ql7/W/PJk2RNOmVyC/Chobn5TY08CiKEX50Sdw+33WTOpPJ/63bfWPl0hxiRv1trPs5prKO8CpA7VNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
 
 </html>

@@ -1,0 +1,106 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#master{
+    width: 100%;
+    height: 100%;
+    background-color: #181818;
+    overflow: hidden;
+}
+#master #nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 8vh;
+    border-bottom: 1px solid #ffffffae;
+    /* background-color: aliceblue; */
+}
+#master #nav #options{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    text-transform: uppercase;
+    font-size: 2vh;
+}
+#master #nav #options a{
+    text-decoration: none;
+    color: aliceblue;
+}
+#master #view{
+    /* display: flex; */
+    width: 100%;
+    /* height: calc(100% - 8vh); */
+    /* padding: 5vh 5vh; */
+}
+.seats{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    overflow: hidden;
+    /* background-color: black; */
+    /* align-items: center; */
+    flex-direction: column;
+}
+.row{
+    /* height: 30vh; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    padding: 2vh;
+}
+#r1{
+    margin-bottom: 3vh;
+}
+.chairs{
+    width: 10vh;
+    height: 10vh;
+    /* margin-top: 2vh; */
+    border-radius: 50%;
+    background-color:#dda73b91;
+}
+
+.tables{
+    /* position: relative; */
+    position: absolute;
+    width: 80%;
+    height: 18vh;
+    border-radius: 5px;
+    background:rgba(255,255,255,0);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,255,255,0.274);
+    box-shadow: 0 15px 20px rgba(0,0,0,0.082);
+}
+#top, #mid, #lst{
+    width: 100%;
+    padding-left: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sqr .tables{
+    width: 50%;
+    height: 20vh;
+}
+.sqr .row{
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.fmly .tables{
+    width: 90%;
+    /* margin-top: 2vh; */
+}
+.fmly .row{
+    width: 90%;
+}
