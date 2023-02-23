@@ -10,8 +10,7 @@ scroll1.forEach(function(elem){
             // markers:true,
             start:"top top",
             scrub:1,
-            end: "bottom -250%",
-            pin:".menu1"
+            // pin:".menu1"
         }
     })
 })
@@ -26,6 +25,7 @@ scroll2.forEach(function(elem){
             // markers:true,
             start:"top top",
             scrub:1,
+            // pin:".menu1"
             
         }
     })
@@ -57,12 +57,12 @@ scroll4.forEach(function(elem){
             // markers:true,
             start:"top top",
             scrub:1,
-            
+            // pin:".menu1"
         }
     })
 })
 
-gsap.set(".name h1",{opacity:.1})
+gsap.set(".name h1",{opacity:1})
 gsap.from(".effect",{
     x:400,
     duration:0.5,
@@ -74,6 +74,7 @@ gsap.from(".effect",{
         scrub:2,
         start:"top 0%",
         // markers:true
+        // pin:".menu1"
     }
 })
 gsap.from(".effect2",{
@@ -86,34 +87,8 @@ gsap.from(".effect2",{
         scroller:"body",
         scrub:2,
         start:"top 0%",
-        markers:true
-    }
-})
-
-gsap.to(".name h1",{
-    opacity:1,
-    duration:1.5,
-    stagger:0.1,
-    delay:-1,
-    scrollTrigger:{
-        trigger:".menu1",
-        scroller:"body",
-        scrub:6,
-        start:"top 0%",
-        markers:true
-    }
-})
-gsap.to(".name .h1",{
-    opacity:1,
-    duration:1.5,
-    stagger:-0.1,
-    delay:-1,
-    scrollTrigger:{
-        trigger:".menu1",
-        scroller:"body",
-        scrub:6,
-        start:"top 0%",
-        markers:true
+        // markers:true,
+        pin:".menu1"
     }
 })
 
@@ -164,33 +139,3 @@ function ordered() {
             count=0;
         num.innerHTML=count}
     })
-//map view
-var flag = 0;
-var circle=document.querySelector(".circ")
-circle.addEventListener("click",function(){
-    if(flag==0){
-        circle.style.left="55%"
-        
-        flag=1;
-    }
-    else{
-        circle.style.left="4%"
-        flag=0;
-    }
-})
-// let views=document.querySelectorAll(".circ");
-// var flag=0;
-// for(let i=0;i<views.length;i++){
-//     views[i].addEventListener("click",function(){
-//         // if(flag==0){
-//             // views[i].style.left="55%"
-//             views[i].style.backgroundColor="green"
-//             // flag=1;
-//         // }
-//         // else{
-//         //     views[i].style.left="4%"
-//         //     flag=0;
-//         // }
-//     });
-// }
-

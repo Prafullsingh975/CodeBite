@@ -6,6 +6,10 @@
     font-family: "gilroy";
     src: url(./fonts/Gilroy-Regular_0.otf);
 }
+@font-face {
+    font-family: "Aldrich Regular";
+    src: url(./fonts/Aldrich-Regular.ttf);
+}
 * {
     margin: 0%;
     padding: 0%;
