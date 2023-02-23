@@ -29,6 +29,7 @@
         <div id="menu">
             <div class="slider">
                 <div class="slide s1">
+                <div class="boverlay"></div>
                     <div class="option">
                         <h1>ROOMS</h1>
                         <div class="stxt">
@@ -37,6 +38,7 @@
                     </div>
                 </div>
                 <div class="slide s2">
+                <div class="boverlay"></div>
                     <div class="option">
                         <h1>DINING</h1>
                         <div class="stxt">
@@ -45,6 +47,7 @@
                     </div>
                 </div>
                 <div class="slide s3">
+                    <div class="boverlay"></div>
                     <div class="option">
                         <h1>FOOD</h1>
                         <div class="stxt">
@@ -53,6 +56,7 @@
                     </div>
                 </div>
                 <div class="slide s4">
+                    <div class="boverlay"></div>
                     <div class="option">
                         <h1>FEEDBACK</h1>
                         <div class="stxt">
@@ -173,7 +177,10 @@
                 <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
                     alt="">
                     <h1>Rooms</h1>
-                <div class="whcontent">
+                        <button class="apply bcpink">
+                            Apply Filter
+                        </button>
+                <div class="whcontent"> 
                     <div class="details">
                         <div class="search">
                             <input type="text" placeholder="Search">
@@ -189,48 +196,49 @@
                                 <input type="date">
                             </div>
                         </div>
+                    </div>               
+                    <div class="applydiv">
+                        <div class="filter">
+                            <div class="clear">
+                            <h3>Filter</h3>
+                            <a href="#">Clear All</a>
+                            </div>
+                            <div class="fprice">
+                                <h3>Price</h3>
+                                <select>Select Price Range
+                                    <option default selected>Select Price Range</option>
+                                    <option>Rs 0 - Rs 2000</option>
+                                    <option>Rs 2001 - Rs 4000</option>
+                                    <option>Rs 4001 - Rs 6000</option>
+                                    <option>Rs 6001 - Rs 8000</option>
+                                    <option>Rs 8001 - Rs 10000</option>
+                                </select>
+                            </div>
+                            <div class="facilities">
+                                <h3>Facilities</h3>
+                                <select>
+                                    <option default selected>Room Facilities</option>
+                                    <option>AC</option>
+                                    <option>Double Bed</option>
+                                    <option>Single Bed</option>
+                                    <option>Two Single Bed</option>
+                                    <option>Geyser</option>
+                                    <option>Mini Fridge</option>
+                                    <option>TV</option>
+                                    <option>Bath Tub</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="sort">
+                            <h3>Sort By</h3>
+                                <select>
+                                    <option default selected>Popularity</option>
+                                    <option>Guest Ratings</option>
+                                    <option>Price Low to High</option>
+                                    <option>Price High to Low</option>
+                                </select>
+                        </div>
                     </div>
-                    
-                    <div class="filter">
-                        <div class="clear">
-                        <h3>Filter</h3>
-                        <a href="#">Clear All</a>
-                        </div>
-                        <div class="fprice">
-                            <h3>Price</h3>
-                            <select>Select Price Range
-                                <option default selected>Select Price Range</option>
-                                <option>Rs 0 - Rs 2000</option>
-                                <option>Rs 2001 - Rs 4000</option>
-                                <option>Rs 4001 - Rs 6000</option>
-                                <option>Rs 6001 - Rs 8000</option>
-                                <option>Rs 8001 - Rs 10000</option>
-                            </select>
-                        </div>
-                        <div class="facilities">
-                            <h3>Facilities</h3>
-                            <select>
-                                <option default selected>Room Facilities</option>
-                                <option>AC</option>
-                                <option>Double Bed</option>
-                                <option>Single Bed</option>
-                                <option>Two Single Bed</option>
-                                <option>Geyser</option>
-                                <option>Mini Fridge</option>
-                                <option>TV</option>
-                                <option>Bath Tub</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="sort">
-                        <h3>Sort By</h3>
-                            <select>
-                                <option default selected>Popularity</option>
-                                <option>Guest Ratings</option>
-                                <option>Price Low to High</option>
-                                <option>Price High to Low</option>
-                            </select>
-                        </div>
                 </div>
             </div>
             <div class="scroll">
@@ -922,6 +930,9 @@
             <div class="header">
                 <img src="https://images.unsplash.com/photo-1608835291093-394b0c943a75?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80" alt="">
                 <h1>Food</h1>
+                <button class="apply bcyellow">
+                    Apply Filter
+                </button>
                 <div class="whcontent">
                     <div class="details">
                         <div class="search">
@@ -939,43 +950,45 @@
                             </div>
                         </div>
                     </div>
-                    <div class="filter">
-                        <div class="clear">
-                        <h3>Filter</h3>
-                        <a href="#">Clear All</a>
+                    <div class="applydiv">
+                        <div class="filter">
+                            <div class="clear">
+                            <h3>Filter</h3>
+                            <a href="#">Clear All</a>
+                            </div>
+                            <div class="fprice">
+                                <h3>Price</h3>
+                                <select>Select Price Range
+                                    <option default selected>Select Price Range</option>
+                                    <option>Rs 0 - Rs 2000</option>
+                                    <option>Rs 2001 - Rs 4000</option>
+                                    <option>Rs 4001 - Rs 6000</option>
+                                    <option>Rs 6001 - Rs 8000</option>
+                                    <option>Rs 8001 - Rs 10000</option>
+                                </select>
+                            </div>
+                            <div class="facilities">
+                                <h3>Facilities</h3>
+                                <select>
+                                    <option default selected>Order Now</option>
+                                    <option>Veg</option>
+                                    <option>Non-Veg</option>
+                                    <option>AC</option>
+                                    <option>Non-AC</option>
+                                    <option>Deserts</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="fprice">
-                            <h3>Price</h3>
-                            <select>Select Price Range
-                                <option default selected>Select Price Range</option>
-                                <option>Rs 0 - Rs 2000</option>
-                                <option>Rs 2001 - Rs 4000</option>
-                                <option>Rs 4001 - Rs 6000</option>
-                                <option>Rs 6001 - Rs 8000</option>
-                                <option>Rs 8001 - Rs 10000</option>
-                            </select>
-                        </div>
-                        <div class="facilities">
-                            <h3>Facilities</h3>
-                            <select>
-                                <option default selected>Order Now</option>
-                                <option>Veg</option>
-                                <option>Non-Veg</option>
-                                <option>AC</option>
-                                <option>Non-AC</option>
-                                <option>Deserts</option>
-                            </select>
+                        <div class="sort">
+                            <h3>Sort By</h3>
+                                <select>
+                                    <option default selected>Popularity</option>
+                                    <option>Guest Ratings</option>
+                                    <option>Price Low to High</option>
+                                    <option>Price High to Low</option>
+                                </select>
                         </div>
                     </div>
-                    <div class="sort">
-                        <h3>Sort By</h3>
-                            <select>
-                                <option default selected>Popularity</option>
-                                <option>Guest Ratings</option>
-                                <option>Price Low to High</option>
-                                <option>Price High to Low</option>
-                            </select>
-                        </div>
                 </div>
             </div>
             <div class="scroll">
@@ -1374,6 +1387,9 @@
                 <img src="https://images.pexels.com/photos/1638341/pexels-photo-1638341.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                     alt="">
                     <h1>Dining</h1>
+                    <button class="apply">
+                        Apply Filter
+                    </button>
                 <div class="whcontent">
                     <div class="details">
                         <div class="search">
@@ -1381,7 +1397,6 @@
                             <i class="ri-search-line"></i>
                         </div>
                         <div class="time">
-                            <h3>Time</h3>
                             <div class="dates">
                                 <div class="from">
                                     <h5>From</h5>
@@ -1394,38 +1409,40 @@
                             </div>
                         </div>
                     </div>
-                    <div class="filter">
-                        <div class="clear">
-                        <h3>Filter</h3>
-                        <a href="#">Clear All</a>
-                        </div>
-                        <div class="fprice">
-                            <h3>Price</h3>
-                            <select>Select Price Range
-                                <option default selected>Select Price Range</option>
-                                <option>Rs 0 - Rs 500</option>
-                                <option>Rs 501 - Rs 1000</option>
-                                <option>Rs 1001 - Rs 1250</option>
-                                <option>Rs 1251 - Rs 2100</option>
-                                <option>Rs 2101 - Rs 4000</option>
-                            </select>
-                        </div>
-                        <div class="dates">
-                            <div class="from">
-                                <h5>Date</h5>
-                                <input type="date">
+                    <div class="applydiv">
+                        <div class="filter">
+                            <div class="clear">
+                            <h3>Filter</h3>
+                            <a href="#">Clear All</a>
+                            </div>
+                            <div class="fprice">
+                                <h3>Price</h3>
+                                <select>Select Price Range
+                                    <option default selected>Select Price Range</option>
+                                    <option>Rs 0 - Rs 500</option>
+                                    <option>Rs 501 - Rs 1000</option>
+                                    <option>Rs 1001 - Rs 1250</option>
+                                    <option>Rs 1251 - Rs 2100</option>
+                                    <option>Rs 2101 - Rs 4000</option>
+                                </select>
+                            </div>
+                            <div class="dates">
+                                <div class="from">
+                                    <h5>Date</h5>
+                                    <input type="date">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="sort">
-                        <h3>Sort By</h3>
-                            <select>
-                                <option default selected>Popularity</option>
-                                <option>Guest Ratings</option>
-                                <option>Price Low to High</option>
-                                <option>Price High to Low</option>
-                            </select>
+                        <div class="sort">
+                            <h3>Sort By</h3>
+                                <select>
+                                    <option default selected>Popularity</option>
+                                    <option>Guest Ratings</option>
+                                    <option>Price Low to High</option>
+                                    <option>Price High to Low</option>
+                                </select>
                         </div>
+                    </div>
                     
                 </div>
             </div>
