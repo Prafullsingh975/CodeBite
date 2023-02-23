@@ -1285,6 +1285,9 @@ body {
         height: 2.2vh;
         width: 2.2vh;
     }
+    #signup .box{
+        height: 67%;
+    }
     #footerlft {
         padding: 4vh 2vh;
     }
