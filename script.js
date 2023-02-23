@@ -182,3 +182,49 @@ tableFilter.addEventListener("click",function(){
     }
 
 })
+
+//PageLoader
+function pageLoader(){
+    var t1 = gsap.timeline();
+    t1.to(".lbbcircle",{
+        scale:20,
+        opacity:1,
+        stagger:.1,
+        ease:Power1.easeInOut,
+        duration:.5
+    })
+    .to(".lbcircle",{
+        stagger:.1,
+        scale:21,
+        ease:Power1.easeInOut,
+        duration:.5
+    })
+    .to(".lcircle",{
+        stagger:.1,
+        scale:25,
+        ease:Power1.easeInOut,
+        duration:.5
+    })
+    .to(".lscircle",{
+        stagger:.1,
+        scale:28,
+        ease:Power1.easeInOut,
+        duration:.5
+    })
+    .to(".llcircle",{
+        stagger:.1,
+        scale:28,
+        ease:Power1.easeInOut,
+        duration:.5
+    })
+    .to("#imglogo",{
+        opacity:1
+    })
+    .to("#loader",{
+        y:"-100%",
+        borderRadius:"50%",
+        ease:Power1,
+        duration:.8
+    })
+}
+pageLoader();
