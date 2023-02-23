@@ -10,6 +10,7 @@ scroll1.forEach(function(elem){
             // markers:true,
             start:"top top",
             scrub:1,
+            end: "bottom -250%",
             pin:".menu1"
         }
     })

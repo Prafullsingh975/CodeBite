@@ -339,13 +339,13 @@ html,body{
     background-size: cover;
 }
 
-.nav{
+/* .nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 10vh;
     /* background-color: lightgray; */
-    padding: 0 3vw;
+    /* padding: 0 3vw;
 }
 .lftnav{
     display: flex;
@@ -362,7 +362,7 @@ html,body{
 .nav #back{
     font-size: 3vw;
 
-}
+} */ */
 .offers{
     display: flex;
     font-size: 1.5vw;
