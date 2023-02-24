@@ -814,7 +814,7 @@ body {
     align-items: center;
     justify-content: center;
     position: fixed;
-    z-index: 99;
+    z-index: 9999;
     top: 0;
     right: -100%;
     opacity: 0;
@@ -835,7 +835,7 @@ body {
     align-items: center;
     justify-content: center;
     position: fixed;
-    z-index: 99;
+    z-index: 9999;
     top: 0;
     right: -100%;
     opacity: 0;
