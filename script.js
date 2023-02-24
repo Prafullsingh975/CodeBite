@@ -123,7 +123,7 @@ login.addEventListener("click",function(){
         page.style.opacity = "1"
 })
 closelog.addEventListener("click",function(){
-        page.style.right="-50%"
+        page.style.right="-100%"
         page.style.opacity = "0"
 })
 signup.addEventListener("click",function(){
@@ -131,7 +131,7 @@ signup.addEventListener("click",function(){
         pages.style.opacity = "1"
 })
 closesign.addEventListener("click",function(){
-        pages.style.right="-50%"
+        pages.style.right="-100%"
         pages.style.opacity = "0"
 })
 
@@ -222,7 +222,6 @@ function pageLoader(){
     })
     .to("#loader",{
         y:"-100%",
-        borderRadius:"50%",
         ease:Power1,
         duration:.8
     })

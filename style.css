@@ -39,7 +39,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100vh;
-    z-index: 999;
+    z-index: 9999;
     overflow: hidden;
     background-color: #000;
 }
@@ -99,7 +99,7 @@ body {
     height: 10vh;
     padding: 10px 20px;
     color: #e5bc6b;
-    z-index: 99;
+    z-index: 999;
     transition: all ease  0.5s;
     background-color: #000;
 }
@@ -815,7 +815,7 @@ body {
     position: fixed;
     z-index: 99;
     top: 0;
-    right: -50%;
+    right: -100%;
     opacity: 0;
     background-color: #181818;
     height: 100vh;
@@ -836,7 +836,7 @@ body {
     position: fixed;
     z-index: 99;
     top: 0;
-    right: -50%;
+    right: -100%;
     opacity: 0;
     background-color: #181818;
     height: 100vh;
